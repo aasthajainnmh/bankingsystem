@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money Transfer Success</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5;
+      }
+
+      .message {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        animation: success 2s ease-in-out infinite;
+      }
+
+      @keyframes success {
+        0% {
+          color: green;
+          transform: scale(1);
+        }
+        50% {
+          color: blue;
+          transform: scale(1.1);
+        }
+        100% {
+          color: red;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">Money transferred successfully!</div>
+  </body>
+</html>
